@@ -1,0 +1,108 @@
+// @import "settings";
+// @import "foundation";
+
+// Or selectively include components
+@import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+  "foundation/components/grid";
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+@font-face {font-family: 'FFOCR-FWebProLight';src:url('../fonts/2FB271_0_unhinted_0.woff2') format('woff2'),url('../fonts/2FB271_0_unhinted_0.woff') format('woff'),url('../fonts/2FB271_0_unhinted_0.ttf') format('truetype');}
+@keyframes bounce { 0% { bottom:-4px; } 25%, 75% { bottom:-6px; } 50% { bottom:-7px; } 100% { bottom:-5px; } }
+$bronze: #98694C; $sauge: #BAB7A5; $beige: #F8F7F0; $noir: #3F3F3D;
+
+*, *:before, *:after { box-sizing: border-box; }
+
+body { width:100%; height:200vh; margin:0; }
+
+.container {
+    height:100vh; margin:auto; text-align:center; background-color: $sauge; padding:2em;
+    
+    p {
+        margin:0; font-family: 'FFOCR-FWebProLight', monospace; color:$noir;
+        i {
+            color:$noir;
+        }
+    }
+}
+
+.top { height:18vh; }
+
+.bottom { height:3vh;
+    img {
+        position:relative; animation:bounce 850ms infinite; width:24px; height:13px; cursor:pointer; } }
+
+.middle { height:69vh; }
+
+.row { margin:0; max-width:95%;
+    .left { text-align:left; padding:0; }
+    .right { text-align:right; padding:0; }
+}
+
+.logo { width:402px; height:100px; margin:0 auto; }
+
+.text { width:100%; height:60vh; text-align:left; padding:1em 0; font-size:1.5em; font-family: 'FFOCR-FWebProLight', monospace; color:$noir; line-height:175%; }
+.contact {
+    width:100%; height:9vh;
+    a {
+        text-decoration:none; 
+    }
+    p {
+        font-family: "adobe-caslon-pro", serif; font-size:2em; color:$bronze; font-style:italic;
+        &:hover {
+            opacity:0.5;
+            text-decoration:underline;
+        }
+    }
+}
+
+.section { height:100vh; background-color:$beige; }
+
+#menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color:pink;
+    z-index:4;
+    display:none;
+    ul {
+         list-style-type: none;
+    }
+    li {
+        display:inline;
+        padding:0 2em;
+    }
+}
