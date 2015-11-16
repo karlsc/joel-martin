@@ -12,16 +12,18 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    <div id="menu">
-      <ul>
-        <li><img src="./images/jm.svg"></img></li>
-        <li>Cours semi-privés</li>
-        <li>Traduction & révision</li>
-        <li>Rédaction Contact</li>
-        <li>Contact</li>
-      </ul>
-    </div>
-    <main class="container">
+    
+    <!--<div id="menu">-->
+    <!--  <ul>-->
+    <!--    <li><img src="./images/jm.svg"></img></li>-->
+    <!--    <li>Cours semi-privés</li>-->
+    <!--    <li>Traduction & révision</li>-->
+    <!--    <li>Rédaction Contact</li>-->
+    <!--    <li>Contact</li>-->
+    <!--  </ul>-->
+    <!--</div>-->
+    
+    <header id="intro">
       <div class="top row">
         <div class="large-1 columns left">
           <p><i class="material-icons">menu</i></p>
@@ -35,12 +37,12 @@
       </div>
       <div class="middle row">
         <div class="large-9 large-centered columns">
-          <div class="text">
+          <div class="typewriter">
             <p class="console">
                 <span id="caption"></span><span id="cursor">|</span>
             </p>
           </div>
-          <div class="contact"><a href="mailto:test@test.test"><p>Contactez-moi</p></a></div>
+          <div class="email"><a href="mailto:test@test.test"><p>Contactez-moi</p></a></div>
         </div>
       </div>
       <div class="bottom row">
@@ -56,12 +58,107 @@
           <p>EN</p>
         </div>
       </div>
-    </main>
-    <section id="section">
+    </header>
+    
+    <main id="classes">
 
+    </main>
+    
+    <section id="translation">
+      
     </section>
+    
+    <section id="redaction">
+      
+    </section>
+    
+    <section id="contact">
+      <div class="row">
+        <div class="large-9 large-centered columns">
+          <h2>Contact</h2>
+        </div>
+        
+        <form action="//formspree.io/karlysun@gmail.com"
+      method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+</form> 
+        
+        
+     <!--<form action="http://formspree.io/karlysun@gmail.com" method="post" novalidate="">-->
+           
+           
+     <!--     <div id="field4-container" class="field f_100">-->
+     <!--          <label for="field4">-->
+     <!--               Name-->
+     <!--          </label>-->
+     <!--          <input type="text" name="field-name" id="field4" required="required">-->
+     <!--     </div>-->
+           
+           
+     <!--     <div id="field2-container" class="field f_100">-->
+     <!--          <label for="field2">-->
+     <!--               Email Address-->
+     <!--          </label>-->
+     <!--          <input type="email" name="field-email" id="field2" required="required">-->
+     <!--     </div>-->
+           
+           
+     <!--     <div id="field5-container" class="field f_100">-->
+     <!--          <label for="field5">-->
+     <!--               Object-->
+     <!--          </label>-->
+     <!--          <input type="text" name="field-object" id="field5" required="required">-->
+     <!--     </div>-->
+           
+           
+     <!--     <div id="field1-container" class="field f_100">-->
+     <!--          <label for="field1">-->
+     <!--               Message-->
+     <!--          </label>-->
+     <!--          <textarea rows="5" cols="20" name="field-message" id="field1" required="required"></textarea>-->
+     <!--     </div>-->
+           
+           
+     <!--     <div id="form-submit" class="field f_100 clearfix submit">-->
+     <!--          <input type="submit" value="Send">-->
+     <!--     </div>-->
+     <!--</form>-->
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--<div class="large-9 large-centered columns">-->
+        <!--  FORM-->
+        <!--</div>-->
+        <!--<div class="large-9 large-centered columns">-->
+        <!--  FORM-->
+        <!--</div>-->
+      </div>
+      <div class="map">
+        <img src="https://placekitten.com/g/1200/200"></img>
+      </div>
+    </section>
+    
+    <footer>
+      <div>
+        <p>À bientôt</p>
+      </div>
+      <div>
+        <img src="./images/jm.svg"></img>
+      </div>
+      <div>
+        <p>Site réalisé par <a href="">Pierre-Marc Duguay</a> et <a href="">Karl Soulière-Crépeau</a></p>
+      </div>
+    </footer>
+    
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app-bundle.js"></script>
   </body>
 </html>
