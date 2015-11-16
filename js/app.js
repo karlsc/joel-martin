@@ -41,10 +41,10 @@ $(window).on("scroll", function(){
     var scrollPos = $(window).scrollTop();
     
     if(scrollOrigin > scrollPos){
-        $("#menu").css("display","inline");
+        $("#menu").animate({top: "0"}, "fast");
     }
     else {
-        $("#menu").css("display","none");
+        $("#menu").slideUp("fast");
     }
     
     scrollOrigin = scrollPos;
