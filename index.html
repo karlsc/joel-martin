@@ -74,71 +74,47 @@
     
     <section id="contact">
       <div class="row">
-        <div class="large-9 large-centered columns">
+        <div class="large-8 large-centered columns">
           <h2>Contact</h2>
+        
+          <form action="//formspree.io/karlysun@gmail.com" method="POST">
+            <div class="container">
+              <div class="container-form">
+                <div>
+                  <label for="field1">Nom</label>
+                  <input type="text" name="name" id="field1" required="required">
+                </div>
+                <div>
+                  <label for="field2">Courriel</label>
+                  <input type="email" name="_replyto" id="field2" required="required">
+                </div>
+                <div>
+                  <label for="field3">Objet</label>
+                  <input type="text" name="object" id="field3" required="required">
+                </div>
+              </div>
+              <div class="container-address">
+                <ul>
+                  <li>Adresse</li>
+                  <li>6520, rue St-Denis</li>
+                  <li>Montréal</li>
+                  <li>Téléphone</li>
+                  <li>514 690-3741</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <label for="field4">Message</label>
+              <textarea name="message" id="field4" required="required"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Envoyer" id="btn-send">
+            </div>
+            <input type="hidden" name="_next" value="#contact" />
+            <input type="hidden" name="_subject" value="Information - Services Linguistiques Joel Martin" />
+            <input type="text" name="_gotcha" style="display:none" />
+          </form>
         </div>
-        
-        <form action="//formspree.io/karlysun@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-</form> 
-        
-        
-     <!--<form action="http://formspree.io/karlysun@gmail.com" method="post" novalidate="">-->
-           
-           
-     <!--     <div id="field4-container" class="field f_100">-->
-     <!--          <label for="field4">-->
-     <!--               Name-->
-     <!--          </label>-->
-     <!--          <input type="text" name="field-name" id="field4" required="required">-->
-     <!--     </div>-->
-           
-           
-     <!--     <div id="field2-container" class="field f_100">-->
-     <!--          <label for="field2">-->
-     <!--               Email Address-->
-     <!--          </label>-->
-     <!--          <input type="email" name="field-email" id="field2" required="required">-->
-     <!--     </div>-->
-           
-           
-     <!--     <div id="field5-container" class="field f_100">-->
-     <!--          <label for="field5">-->
-     <!--               Object-->
-     <!--          </label>-->
-     <!--          <input type="text" name="field-object" id="field5" required="required">-->
-     <!--     </div>-->
-           
-           
-     <!--     <div id="field1-container" class="field f_100">-->
-     <!--          <label for="field1">-->
-     <!--               Message-->
-     <!--          </label>-->
-     <!--          <textarea rows="5" cols="20" name="field-message" id="field1" required="required"></textarea>-->
-     <!--     </div>-->
-           
-           
-     <!--     <div id="form-submit" class="field f_100 clearfix submit">-->
-     <!--          <input type="submit" value="Send">-->
-     <!--     </div>-->
-     <!--</form>-->
-        
-        
-        
-        
-        
-        
-        
-        
-        <!--<div class="large-9 large-centered columns">-->
-        <!--  FORM-->
-        <!--</div>-->
-        <!--<div class="large-9 large-centered columns">-->
-        <!--  FORM-->
-        <!--</div>-->
       </div>
       <div class="map">
         <img src="https://placekitten.com/g/1200/200"></img>
@@ -159,6 +135,6 @@
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app-bundle.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

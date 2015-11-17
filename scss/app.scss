@@ -74,8 +74,30 @@ header { height:100vh; margin:auto; text-align:center; background-color:$sauge; 
 
 #redaction { height:80vh; background-color:$noir; }
 
-#contact { height:130vh; background-color:$beige; 
-    .row { height:100vh; }
+#contact { height:130vh; background-color:$beige;
+    h2 { font-family:"adobe-caslon-pro", serif; color:$bronze; font-size:3.25em; font-style:italic; text-decoration:underline; margin:0.25em 0; }
+    
+    .row { height:100vh; 
+        .large-8 { margin:0 auto; padding:0; } }
+    
+    .container { display:flex; 
+        &-form {
+            width:60%;
+        }
+        &-address { width:40%;
+            ul { list-style:none; font-size:1.25em; font-family:serif; margin-top:0;
+                li { color:$bronze; font-weight:bold;
+                    &:first-child, &:nth-child(4) { color:$noir; padding-bottom:0.5em; }
+                    &:nth-child(4) { padding-top:0.75em; }
+    }   }   }   }
+    
+    form {
+        label, input { display:block; }
+        label { padding:0 0 0.75em 0; font-family:serif; color:$noir; font-size:1.25em; font-weight:bold; }
+        input { width:100%; padding:0.25em; margin-bottom:1em;}
+        #field4 { width:100%; height:150px; resize:none; margin-bottom:1em; }
+        #btn-send { width:130px; height:30px; border-radius:6px; background:$bronze; color:#fff; border:0; font-family:serif; font-size:1em; } }
+        
     .map { height:30vh; }
 }
 
