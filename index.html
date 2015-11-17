@@ -12,21 +12,10 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-    
-    <!--<div id="menu">-->
-    <!--  <ul>-->
-    <!--    <li><img src="./images/jm.svg"></img></li>-->
-    <!--    <li>Cours semi-privés</li>-->
-    <!--    <li>Traduction & révision</li>-->
-    <!--    <li>Rédaction Contact</li>-->
-    <!--    <li>Contact</li>-->
-    <!--  </ul>-->
-    <!--</div>-->
-    
-    <header id="intro">
+    <header id="start">
       <div class="top row">
         <div class="large-1 columns left">
-          <p><i class="material-icons">menu</i></p>
+          <i class="material-icons">menu</i>
         </div>
         <div class="large-10 columns">
           <img class="logo" src="./images/logo.svg"></img>
@@ -42,7 +31,7 @@
                 <span id="caption"></span><span id="cursor">|</span>
             </p>
           </div>
-          <div class="email"><a href="mailto:test@test.test"><p>Contactez-moi</p></a></div>
+          <div class="email cl-effect-21"><a href="#contact">Contactez-moi</a></div>
         </div>
       </div>
       <div class="bottom row">
@@ -50,7 +39,7 @@
           <p>ES</p>
         </div>
         <div class="large-10 columns">
-          <a href="#section">
+          <a href="#classes">
             <img src="./images/fleche.svg"></img>
           </a>
         </div>
@@ -241,6 +230,23 @@
         <p>Site réalisé par <a href="">Pierre-Marc Duguay</a> et <a href="">Karl Soulière-Crépeau</a></p>
       </div>
     </footer>
+    
+    <div id="menu">
+      <ul>
+        <li><a href="#start"><img src="./images/jm.svg"></img></a></li>
+        <li class="cl-effect-21"><a href="#classes">Cours semi-privés</a></li>
+        <li class="cl-effect-21"><a href="#translation">Traduction & révision</a></li>
+        <li class="cl-effect-21"><a href="#redaction">Rédaction</a></li>
+        <li class="cl-effect-21"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="overlay">
+      <a href="#classes">Cours semi-privés</a>
+      <a href="#translation">Traduction & révision</a>
+      <a href="#redaction">Rédaction</a>
+      <a href="#contact">Contactez-moi</a><img src="./images/jm.svg"></img>
+    </div>
     
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
