@@ -120,5 +120,18 @@
 	    });
 	});
 
+	$(".accordion .accordion-navigation a").on("click", ".class", function(){
+	    if($(this).hasClass("select")){
+	        $(".class").removeClass("select");
+	        $(this).find("#close").hide();
+	    }
+	    else{
+	        $(".class").removeClass("select").find("#close").hide();
+	        $(this).addClass("select").find("#close").show();
+	    }
+	});
+	    
+
+
 /***/ }
 /******/ ]);
