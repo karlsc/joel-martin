@@ -71,19 +71,22 @@
 	var automaticScroll = false;
 
 	$('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-	        var target = $(this.hash);
-	        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-	        if (target.length) {
-	            $(".overlay").fadeOut(100);
-	            $("#menu").fadeOut("fast");
-	            automaticScroll = true;
-	            $('html,body').animate({
-	                scrollTop: target.offset().top
-	            }, 1000, function(){
-	                automaticScroll = false;
-	            });
-	            return false;
+	    var h = $(this).attr('href');
+	    if(h !== "#panel1" && h !== "#panel2" && h !== "#panel3" && h !== "#panel4" && h !== "#panel5"){
+	        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+	            var target = $(this.hash);
+	            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+	            if (target.length) {
+	                $(".overlay").fadeOut(100);
+	                $("#menu").fadeOut("fast");
+	                automaticScroll = true;
+	                $('html,body').animate({
+	                    scrollTop: target.offset().top
+	                }, 1000, function(){
+	                    automaticScroll = false;
+	                });
+	                return false;
+	            }
 	        }
 	    }
 	});
