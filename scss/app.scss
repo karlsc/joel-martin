@@ -72,9 +72,9 @@ header { height:100vh; margin:auto; text-align:center; background-color:$sauge; 
     .left { text-align:left; padding:0; }
     .right { text-align:right; padding:0; } }
 
-#classes { height:140vh; background-color:$beige; 
+#classes { height:auto; background-color:$beige; 
     h2 { color:$bronze; }
-    .row { height:120vh;
+    .row { //height:auto;
         .large-8 { margin:0 auto; padding:0; } }
     // .class { color:$beige; border-bottom:1px solid black;
     //     width:100%; height:50px; display:flex;
@@ -89,9 +89,9 @@ header { height:100vh; margin:auto; text-align:center; background-color:$sauge; 
     // }
 }
 
-#translation { height:120vh; background-color:$beige; 
+#translation { height:auto; background-color:$beige; 
     h2 { color:$bronze; }
-    .row { height:120vh; 
+    .row { //height:120vh; 
         .large-8 { margin:0 auto; padding:0; } }
         h3 { color:$bronze; font-family:serif; }
     p { color:$bronze; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; font-weight:bold; margin:1em 0; line-height:175%; }
@@ -102,9 +102,9 @@ header { height:100vh; margin:auto; text-align:center; background-color:$sauge; 
         h3 { display:inline-block; vertical-align:top; margin:0; padding:0; text-align:left; } }
 }
 
-#redaction { height:80vh; background-color:$noir; 
+#redaction { height:auto; background-color:$noir; 
     h2 { color:$sauge; }
-    .row { height:80vh; 
+    .row { //height:80vh; 
         .large-8 { margin:0 auto; padding:0; } }
     p { color:$sauge; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; font-weight:bold; margin:2em 0; line-height:175%; }
     #btn { width:180px; margin:2em 0;}
@@ -118,10 +118,10 @@ h2 { font-family:"adobe-caslon-pro", serif; font-size:3.25em; font-style:italic;
     &-second { width:40%; text-align:right; }
 }
 
-#contact { height:130vh; background-color:$beige;
+#contact { height:auto; background-color:$beige;
     h2 { color:$bronze; }
     
-    .row { height:100vh; 
+    .row { //height:100vh; 
         .large-8 { margin:0 auto; padding:0; } }
     
     ul { list-style:none; font-size:1.25em; font-family:serif; margin-top:0;
@@ -137,16 +137,16 @@ h2 { font-family:"adobe-caslon-pro", serif; font-size:3.25em; font-style:italic;
         #field4 { width:100%; height:150px; resize:none; margin-bottom:1em; } 
         #btn { width:130px; } }
         
-    .map { height:30vh; }
+    //.map { height:30vh; }
 }
 
-footer { height:40vh;
+footer { height:auto;
     div {
-        &:first-child { height:25vh; background-color:$beige; padding:4em 2em;
+        &:first-child { height:auto; background-color:$beige; padding:4em 2em;
             p { margin:0; text-align:center; font-style:italic; font-family:"adobe-caslon-pro", serif; color:$bronze; margin:auto; font-size:1.8em; font-weight:bold; } }
-        &:nth-child(2) { height:27vh; background-color:$sauge; padding:4em 2em;
+        &:nth-child(2) { height:auto; background-color:$sauge; padding:4em 2em;
             img { display:block; margin:auto; width:50px; height:50px; } }
-        &:last-child { height:8vh; background-color:$noir; padding:1.25em 2em;
+        &:last-child { height:auto; background-color:$noir; padding:1.25em 2em;
             p { margin:0; text-align:right; font-family:sans-serif; font-size:0.65em; color:$bronze; }
             a { color:$sauge; text-decoration:none;
                 &:hover { opacity:0.5; } } }
@@ -188,34 +188,29 @@ footer { height:40vh;
     &:hover .class-second { background-color:$bronze; }
 
         .class-first {
-            width:15%; background-color:$noir; font-family:'FFOCR-FWebProLight', monospace; font-size:1.5em; text-align:center;
+            width:20%; background-color:$noir; font-family:'FFOCR-FWebProLight', monospace; font-size:1.5em; text-align:center;
             p { margin:0; line-height:70px; }
         }
         .class-second { display:flex;
-            width:85%; background-color:$sauge; font-family:serif; text-align:center; font-size:1.5em;
+            width:80%; background-color:$sauge; font-family:serif; text-align:center; font-size:1.5em;
             h3 { margin:0; line-height:70px; font-weight:normal; width:90%; }
             #close { display:none; width:10%; font-family:'FFOCR-FWebProLight', monospace; font-size:1em; color:$noir; line-height:70px; font-weight:bold; cursor:pointer; }
         }
 }
 
 .accordion .accordion-navigation>.content.active { display:flex; width:100%; height:100%; background-color:$beige; padding:0; 
-    .active-first { width:15%; background-color:$beige; //border-width:0 1px 0 1px; border-style:solid; border-color:$noir;
+    .active-first { width:20%; background-color:$beige; //border-width:0 1px 0 1px; border-style:solid; border-color:$noir;
         ul { list-style:none; padding:0; color:$bronze; font-family:'FFOCR-FWebProLight', monospace; text-decoration:none; font-size:0.75em; margin:0;
             li { padding:2.5em 0; margin:0; text-align:center;}
         }
     }
-    .active-second { width:85%; height:100%; padding:0; margin:0; }
-}
-
-
-
-.accordion .content.active {//display:flex; width:100%; height:100%;
-    // .active-first { width:15%; background-color:$beige;
-    //     ul { list-style:none; padding:0; color:$bronze; font-family:'FFOCR-FWebProLight', monospace; text-decoration:none; font-size:0.75em; margin:0;
-    //         li { padding:2.5em 0; margin:0; text-align:center;}
-    //     }
-    // }
-    // .active-second { width:85%; height:100%; padding:0; margin:0; }
+    .active-second { width:80%; height:100%; padding:1em 3em; margin:0; 
+        img { width:100%; height:200px; margin:0 0 2em 0;}
+        p { font-size:1em; color:$bronze; font-family:'FFOCR-FWebProLight', monospace; }
+        .class-next {
+            width:100%; height:70px; background-color:$noir; border-radius:5px;
+        }
+    }
 }
     
 .accordion a { padding:0 !important; text-decoration:none !important; background-color:$bronze !important;}
