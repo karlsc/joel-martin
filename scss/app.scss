@@ -55,11 +55,11 @@ header { height:100vh; margin:auto; text-align:center; background-color:$sauge; 
 .top { height:22vh; padding:2em 2em 0 2em;
     .logo { width:402px; height:100px; margin:0 auto; } }
 
-.middle { height:69vh;
+.middle { height:69vh; padding:1em 0;
     .large-8 { margin:0 auto; padding:0; }
-    .typewriter { width:100%; height:54vh; text-align:left; padding:2em 0; font-size:1.25em; font-family:'FFOCR-FWebProLight', monospace; color:$noir; line-height:175%; 
-        p { cursor:default; } } 
-    .email { width:100%; height:15vh;
+    .typewriter { width:100%; height:55vh; text-align:left; padding:1em 0; font-size:1.25em; font-family:'FFOCR-FWebProLight', monospace; color:$noir; //line-height:175%; 
+        p { cursor:default; line-height:200%; } } 
+    .email { width:100%; height:auto; padding:1em 0;
         a { text-decoration:none; font-family:"adobe-caslon-pro", serif; font-size:2em; font-style:italic; color:$bronze; position: relative;	display: inline-block; outline: none;
             &:hover, &:focus { outline: none; } 
             
@@ -89,33 +89,42 @@ header { height:100vh; margin:auto; text-align:center; background-color:$sauge; 
     // }
 }
 
-#translation { height:auto; background-color:$beige; 
+#translation { height:auto; background-color:$beige;
     h2 { color:$bronze; }
     .row { //height:120vh; 
         .large-8 { margin:0 auto; padding:0; } }
-        h3 { color:$bronze; font-family:serif; }
-    p { color:$bronze; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; font-weight:bold; margin:1em 0; line-height:175%; }
+        h3 { color:$noir; font-family:serif; width:100%; }
+    p { color:$noir; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; font-weight:bold; margin:0; line-height:175%; text-align:justify; }
     #btn { width:180px; margin:2em 0;}
-    img { margin-top:4em;}
-    .clients {
-        img { margin:0 1.2em; }
-        h3 { display:inline-block; vertical-align:top; margin:0; padding:0; text-align:left; } }
+    img { margin-top:0; }
+    // .clients {
+    //     img { margin:0 1.2em; }
+        // h3 { display:inline-block; vertical-align:top; margin:0; padding:0; text-align:left; } 
+        
+    // }
 }
 
 #redaction { height:auto; background-color:$noir; 
     h2 { color:$sauge; }
     .row { //height:80vh; 
         .large-8 { margin:0 auto; padding:0; } }
-    p { color:$sauge; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; font-weight:bold; margin:2em 0; line-height:175%; }
+    p { color:$sauge; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; font-weight:bold; margin:0; line-height:175%; text-align:justify; }
     #btn { width:180px; margin:2em 0;}
-    img { display:inline; margin:2em auto;}
+    img { display:inline; margin:0;}
 }
 
 h2 { font-family:"adobe-caslon-pro", serif; font-size:3.25em; font-style:italic; text-decoration:none; margin:0.5em 0; }
-#btn { height:30px; border-radius:6px; background:$bronze; color:#fff; border:0; font-family:serif; font-size:1em; }
-.container { display:flex; 
+#btn { height:30px; border-radius:6px; background:$bronze; color:$beige; border:0; font-family:'FFOCR-FWebProLight', monospace; font-size:1em; cursor:pointer; 
+    &:focus { outline:0; }
+}
+.container { display:flex; margin-top:2em;
     &-first { width:60%; }
     &-second { width:40%; text-align:right; }
+    &-first2 { width:25%; 
+        h3 { margin:0; } }
+    &-second2 { width:75%; text-align:right;
+    img { margin-left:2em; }
+    }
 }
 
 #contact { height:auto; background-color:$beige;
@@ -124,7 +133,7 @@ h2 { font-family:"adobe-caslon-pro", serif; font-size:3.25em; font-style:italic;
     .row { //height:100vh; 
         .large-8 { margin:0 auto; padding:0; } }
     
-    ul { list-style:none; font-size:1.25em; font-family:serif; margin-top:0;
+    ul { list-style:none; font-size:1.5em; margin-top:0; font-family:"adobe-caslon-pro", serif; font-style:italic; font-weight:bold;
         li { color:$bronze; font-weight:bold;
             &:first-child, &:nth-child(4) { color:$noir; padding-bottom:0.5em; }
             &:nth-child(4) { padding-top:0.75em; } }   
@@ -132,12 +141,12 @@ h2 { font-family:"adobe-caslon-pro", serif; font-size:3.25em; font-style:italic;
     
     form {
         label, input { display:block; }
-        label { padding:0 0 0.75em 0; font-family:serif; color:$noir; font-size:1.25em; font-weight:bold; }
+        label { padding:0 0 0.75em 0; font-family:serif; color:$noir; font-size:1.25em; font-weight:bold; font-family:'FFOCR-FWebProLight', monospace; }
         input { width:100%; padding:0.25em; margin-bottom:1em;}
         #field4 { width:100%; height:150px; resize:none; margin-bottom:1em; } 
         #btn { width:130px; } }
         
-    //.map { height:30vh; }
+    #map { height:300px; width:100%; }
 }
 
 footer { height:auto;
@@ -145,9 +154,10 @@ footer { height:auto;
         &:first-child { height:auto; background-color:$beige; padding:4em 2em;
             p { margin:0; text-align:center; font-style:italic; font-family:"adobe-caslon-pro", serif; color:$bronze; margin:auto; font-size:1.8em; font-weight:bold; } }
         &:nth-child(2) { height:auto; background-color:$sauge; padding:4em 2em;
-            img { display:block; margin:auto; width:50px; height:50px; } }
+            img { display:block; margin:auto; width:50px; height:50px; 
+                &:hover { opacity:0.5; } } }
         &:last-child { height:auto; background-color:$noir; padding:1.25em 2em;
-            p { margin:0; text-align:right; font-family:sans-serif; font-size:0.65em; color:$bronze; }
+            p { margin:0; text-align:right; font-family:sans-serif; font-size:0.65em; color:$bronze; font-family:'FFOCR-FWebProLight', monospace; }
             a { color:$sauge; text-decoration:none;
                 &:hover { opacity:0.5; } } }
     }
@@ -193,7 +203,7 @@ footer { height:auto;
         }
         .class-second { display:flex;
             width:80%; background-color:$sauge; font-family:serif; text-align:center; font-size:1.5em;
-            h3 { margin:0; line-height:70px; font-weight:normal; width:90%; }
+            h3 { margin:0; line-height:70px; font-weight:normal; width:90%; font-family:'FFOCR-FWebProLight', monospace; font-size:0.75em; }
             #close { display:none; width:10%; font-family:'FFOCR-FWebProLight', monospace; font-size:1em; color:$noir; line-height:70px; font-weight:bold; cursor:pointer; }
         }
 }

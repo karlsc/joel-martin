@@ -130,8 +130,6 @@
 	        $(this).addClass("select").find("#close").show();
 	    }
 	});
-	    
-
 
 /***/ }
 /******/ ]);

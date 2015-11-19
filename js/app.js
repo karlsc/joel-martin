@@ -84,4 +84,3 @@ $(".accordion .accordion-navigation a").on("click", ".class", function(){
         $(this).addClass("select").find("#close").show();
     }
 });
-    
